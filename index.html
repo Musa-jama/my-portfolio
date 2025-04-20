@@ -8,7 +8,7 @@
 </head>
 <body>
     <script src="script.js"></script>
-    
+
     <header>
         <h1>Musa Jama</h1>
         <nav>
@@ -18,55 +18,66 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Musa, I'm a student at Humber College. My interests are cooking and reading. I'm currently persuing my dream. </p>
+        </section>
+    
+        <button id="darkModeToggle">🌙</button>
     </header>
 
+    <section id="projects" class="gallery">
+        <div class="project">
+            <img src=https://image.similarpng.com/file/similarpng/very-thumbnail/2020/05/Solutions-website-logo-png.png alt="webpage Image" class="project-img">
+            <h1>Webpage</h1>
+            <button class="show-details">Show Details</button>
+            <p class="details">This is the initial undertaking, concentrating on designing a properly formatted and fully structured webpage with HTML. The website contains a header, several content areas, and an adaptive footer. The project exhibits proper markup coding, layout design, and systematic page arrangement for fundamental web development.</p>
+        </div>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>My name is Musa, I'm a student at Humber College. My interests are cooking and reading. I'm currently persuing my dream. </p>
+        <div class="project">
+            <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sPC6b3oTgzKALC3Kt1LTbxGYB3oN1SrTjA&s alt="JavaScript Image" class="project-img">
+            <h2>JavaScript</h2>
+            <button class="show-details">Show Details</button>
+            <p class="details">The second project is centered around JavaScript. It has dynamic features like interactive buttons, form validation, and event listeners for real-time feedback. The project shows how JavaScript can add interactivity and usability to a static webpage.
+            </p>
+        </div>
+    
+        <div class="project">
+            <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9098syhxZsJsT8124iaqSBzF6T2F5PpLeUA&s alt="CSS Image" class="project-img">
+            <h3>CSS</h3>
+            <button class="show-details">Show Details</button>
+            <p class="details">This is the third project, focusing on applying CSS to design a webpage. It uses media queries for responsiveness and custom hover effect, colors, and fonts. This project is ideal to illustrate front-end design and visual imagination using nothing but CSS.</p>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+            <form id="contactForm" action="#" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            
+            </form>
+        </div>
     </section>
 
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Thank you! Your information has been submitted.");
+            this.reset();
+        });
+    </script>
 
-    <div class="gallery">
-        <div class="project">
-            <h1>Project 1</h1>
-            <button class="show-details">Show Details</button>
-            <p class="details">This is the first project, It is about webpage.</p>
-        </div>
+    </body>
+    </html>
 
-    </div>
-
-    <div class="project">
-        <h2>Project 2</h2>
-        <button class="show-details">Show Details</button>
-        <p class="details">This is the second project, It is about JavaScript.</p>
-    </div>
-
-
-
-    <div class="project">
-        <h3>Project 3</h3>
-        <button class="show-details">Show Details</button>
-        <p class="details">This is the third project, it is about working with styles.css.</p>
-    </div>
-</div>
-
-
-<h1>Contact Us</h1>
-
-<div class="contact-form">
-    <form action="#" method="POST">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        
-    </form>
-</div>
-
-    
     <footer>
         <p>&copy; 2025 Musa Jama</p>
     </footer>
